@@ -4,25 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDoMate</title>
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link to Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to Font Awesome CSS library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <section class="app-wrapper center">
+    <!-- App Start -->
+    <section class="app-wrapper">
+      <!-- App Heading -->
+      <div class="app-heading">
+        <h2>To do Mate</h2>
+      </div>
       <div class="container">
-        <div class="form-container">
-          <form id="app-form">
-            <div class="form-group center">
-              <input type="text" id="form-input"/>
-              <input type="submit" value="Add Task" id="submit-btn"/>
-            </div>
-          </form>
+        <div class="task-container">
+          <!-- App Controls -->
+          <div class="task-group center">
+            <input type="text" id="task-input" placeholder="Write your tasks" />
+            <button id="submit-btn">Add Task</button>
+          </div>
+        </div>
+        <!-- App To Do List -->
+        <div class="list-container">
+          <ul class="to-do-list"></ul>
         </div>
       </div>
     </section>
+    <!-- Script File -->
     <script src="./js/script.js"></script>
   </body>
 </html>
